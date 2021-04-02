@@ -5,8 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\Servicos\" />
-    <Folder Include="Interfaces\Repositorios\" />
+    <ProjectReference Include="..\JaliBackend.Dominio\JaliBackend.Dominio.csproj" />
   </ItemGroup>
 
 </Project>

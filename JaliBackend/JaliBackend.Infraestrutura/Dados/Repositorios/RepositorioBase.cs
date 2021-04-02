@@ -107,7 +107,7 @@ namespace JaliBackend.Infraestrutura.Dados.Repositorios
         {
             try
             {
-                return await _sqlContext.Set<T>().ToArrayAsync();
+                return await _sqlContext.Set<T>().AsNoTracking().ToArrayAsync();
             }
             catch (Exception ex)
             {
