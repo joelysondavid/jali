@@ -5,8 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="4.1 - Dados\" />
-    <Folder Include="4.2 - CrossCutting\" />
+    <Folder Include="CrossCutting\" />
   </ItemGroup>
 
 </Project>

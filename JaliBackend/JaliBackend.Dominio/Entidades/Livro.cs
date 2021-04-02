@@ -35,12 +35,22 @@ namespace JaliBackend.Dominio.Entidades
         /// <summary>
         /// Data que iniciou a leitura do livro
         /// </summary>
-        public DateTime DataInicioLeitura { get; set; }
+        public DateTime? DataInicioLeitura { get; set; }
 
         /// <summary>
         /// Data que terminou de ler o livro
         /// </summary>
-        public DateTime DataConclusaoLeitura { get; set; }
+        public DateTime? DataConclusaoLeitura { get; set; }
+
+        /// <summary>
+        /// Data de cadastro do livro...
+        /// </summary>
+        public DateTime DataCadastro { get; set; }
+
+        /// <summary>
+        /// Data de Atualizacao do cadastro de livro
+        /// </summary>
+        public DateTime? DataModificacao { get; set; }
 
         /// <summary>
         /// Lido/Lendo
