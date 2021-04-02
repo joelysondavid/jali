@@ -1,4 +1,5 @@
 ﻿using JaliBackend.Dominio.Core.Interfaces.Repositorios;
+using JaliBackend.Dominio.Core.Interfaces.Servicos;
 using JaliBackend.Dominio.Entidades;
 
 namespace JaliBackend.Dominio.Servicos
@@ -6,7 +7,7 @@ namespace JaliBackend.Dominio.Servicos
     /// <summary>
     /// Classe de Serviço de Genêro de livro
     /// </summary>
-    public class ServicoGenero : ServicoBase<Genero>, IRepositorioGenero
+    public class ServicoGenero : ServicoBase<Genero>, IServicoGenero
     {
         /// <summary>
         /// Repositorio de Genero
