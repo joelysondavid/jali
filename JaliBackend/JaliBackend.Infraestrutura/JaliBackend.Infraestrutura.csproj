@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="CrossCutting\" />
+    <Folder Include="CrossCutting\IOC\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\JaliBackend.Aplicacao\JaliBackend.Aplicacao.csproj" />
     <ProjectReference Include="..\JaliBackend.Domain.Core\JaliBackend.Dominio.Core.csproj" />
     <ProjectReference Include="..\JaliBackend.Dominio\JaliBackend.Dominio.csproj" />
   </ItemGroup>

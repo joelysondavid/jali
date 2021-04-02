@@ -1,10 +1,9 @@
 ﻿using JaliBackend.Aplicacao.Dtos;
+using JaliBackend.Aplicacao.Interfaces.Mappers;
 using JaliBackend.Dominio.Entidades;
-using JaliBackend.Infraestrutura.CrossCutting.Interfaces;
-using System;
 using System.Collections.Generic;
 
-namespace JaliBackend.Infraestrutura.CrossCutting.Mapper
+namespace JaliBackend.Aplicacao.Mappers
 {
     public class MapperGenero : IMapperGenero
     {

@@ -2,7 +2,7 @@
 using JaliBackend.Dominio.Entidades;
 using System.Collections.Generic;
 
-namespace JaliBackend.Infraestrutura.CrossCutting.Interfaces
+namespace JaliBackend.Aplicacao.Interfaces.Mappers
 {
     /// <summary>
     /// Interface para mapeamento do livro

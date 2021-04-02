@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace JaliBackend.Infraestrutura.CrossCutting.Interfaces
+namespace JaliBackend.Aplicacao.Interfaces.Mappers
 {
     /// <summary>
     /// Interface para mepeamento do genero

@@ -12,23 +12,23 @@ namespace JaliBackend.Aplicacao.Interfaces
         /// <summary>
         /// Adiciona
         /// </summary>
-        /// <param name="genero">Genero a ser adicionado</param>
+        /// <param name="generoDto">Genero a ser adicionado</param>
         /// <returns>Task</returns>
-        Task Adicionar(GeneroDto genero);
+        Task Adicionar(GeneroDto generoDto);
 
         /// <summary>
         /// Atualizar
         /// </summary>
-        /// <param name="genero">Genero a ser a tualizao</param>
+        /// <param name="generoDto">Genero a ser a tualizao</param>
         /// <returns>Task</returns>
-        Task Atualizar(GeneroDto genero);
+        Task Atualizar(GeneroDto generoDto);
 
         /// <summary>
         /// Remove
         /// </summary>
-        /// <param name="genero">Genero a ser removido</param>
+        /// <param name="generoDto">Genero a ser removido</param>
         /// <returns>Task</returns>
-        Task Remover(GeneroDto genero);
+        Task Remover(GeneroDto generoDto);
 
         /// <summary>
         /// Obtem todos

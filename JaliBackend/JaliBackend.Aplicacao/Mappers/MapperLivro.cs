@@ -1,11 +1,10 @@
 ﻿using JaliBackend.Aplicacao.Dtos;
+using JaliBackend.Aplicacao.Interfaces.Mappers;
 using JaliBackend.Dominio.Entidades;
-using JaliBackend.Infraestrutura.CrossCutting.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
-namespace JaliBackend.Infraestrutura.CrossCutting.Mapper
+namespace JaliBackend.Aplicacao.Mappers
 {
     /// <summary>
     /// Classe para mapeamento do livro

@@ -12,23 +12,23 @@ namespace JaliBackend.Aplicacao.Interfaces
         /// <summary>
         /// Adicionar livro
         /// </summary>
-        /// <param name="livro">Livro a ser adicionado</param>
+        /// <param name="livroDto">Livro a ser adicionado</param>
         /// <returns>Task</returns>
-        Task Adicionar(LivroDto livro);
+        Task Adicionar(LivroDto livroDto);
 
         /// <summary>
         /// Atualizar livro
         /// </summary>
-        /// <param name="livro">Livro a ser</param>
+        /// <param name="livroDto">Livro a ser</param>
         /// <returns>Task</returns>
-        Task Atualizar(LivroDto livro);
+        Task Atualizar(LivroDto livroDto);
 
         /// <summary>
         /// Remover livro
         /// </summary>
-        /// <param name="livro">Livro a ser removido</param>
+        /// <param name="livroDto">Livro a ser removido</param>
         /// <returns>Task</returns>
-        Task Remover(LivroDto livro);
+        Task Remover(LivroDto livroDto);
 
         /// <summary>
         /// Obtem todos os livros
