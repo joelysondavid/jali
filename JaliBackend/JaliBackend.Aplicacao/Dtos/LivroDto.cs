@@ -1,14 +1,19 @@
 ﻿using System;
 
-namespace JaliBackend.Dominio.Entidades
+namespace JaliBackend.Aplicacao.Dtos
 {
     /// <summary>
-    /// Livro
+    /// Livro dto para exibição
     /// </summary>
-    public class Livro : Base
+    public class LivroDto
     {
         /// <summary>
-        /// Título do livro
+        /// Id Livro
+        /// </summary>
+        public int? Id { get; set; }
+
+        /// <summary>
+        /// Titulo Livro
         /// </summary>
         public string Titulo { get; set; }
 
@@ -18,42 +23,27 @@ namespace JaliBackend.Dominio.Entidades
         public string Autor { get; set; }
 
         /// <summary>
-        /// Genero do livro
-        /// </summary>
-        public Genero Genero { get; set; }
-
-        /// <summary>
-        /// Avaliação do livro
-        /// </summary>
-        public int? Avaliacao { get; set; }
-
-        /// <summary>
-        /// Breve resumo para lembraça de pontos relevantes do livro
+        /// Resumo
         /// </summary>
         public string Resumo { get; set; }
 
         /// <summary>
-        /// Data que iniciou a leitura do livro
+        /// Avalição pessoal do livro
+        /// </summary>
+        public int? Avaliacao { get; set; }
+
+        /// <summary>
+        /// Data que iniciou ou irá iniciar a leitura do livro
         /// </summary>
         public DateTime? DataInicioLeitura { get; set; }
 
         /// <summary>
-        /// Data que terminou de ler o livro
+        /// Data de conclusão da leitura
         /// </summary>
         public DateTime? DataConclusaoLeitura { get; set; }
 
         /// <summary>
-        /// Data de cadastro do livro...
-        /// </summary>
-        public DateTime DataCadastro { get; set; }
-
-        /// <summary>
-        /// Data de Atualizacao do cadastro de livro
-        /// </summary>
-        public DateTime? DataModificacao { get; set; }
-
-        /// <summary>
-        /// Lido/Lendo
+        /// Status lido lendo
         /// </summary>
         public LidoLendo Status { get; set; }
     }
