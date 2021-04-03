@@ -16,7 +16,7 @@ namespace JaliBackend.Aplicacao.Mappers
         {
             Genero entidadeGenero = new Genero
             {
-                Id = generoDto.Id ?? 0,
+                Id = generoDto.Id,
                 TipoGenero = generoDto.TipoGenero,
                 Descricao = generoDto.Descricao,
             };

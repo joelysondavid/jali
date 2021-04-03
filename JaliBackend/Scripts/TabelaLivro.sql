@@ -1,0 +1,14 @@
+CREATE TABLE [dbo].[Livros]
+(
+	Id INT IDENTITY(1,1),
+	Titulo VARCHAR(50) NOT NULL,
+	Resumo VARCHAR(255) NULL,
+	DataCadatro DATETIME NOT NULL,
+	DataModificacao DATETIME NULL,
+	DataInicioLeitura DATETIME NULL,
+	DataConclusaoLeitura DATETIME NULL,
+	Status TINYINT NOT NULL,
+	Avaliacao TINYINT NULL,
+)
+
+SELECT * FROM LIVROS

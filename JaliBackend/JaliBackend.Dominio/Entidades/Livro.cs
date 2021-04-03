@@ -20,7 +20,7 @@ namespace JaliBackend.Dominio.Entidades
         /// <summary>
         /// Genero do livro
         /// </summary>
-        public Genero Genero { get; set; }
+        // public Genero Genero { get; set; }
 
         /// <summary>
         /// Avaliação do livro
@@ -71,6 +71,11 @@ namespace JaliBackend.Dominio.Entidades
         /// <summary>
         /// Ainda está lendo o livro
         /// </summary>
-        Lendo
+        Lendo,
+
+        /// <summary>
+        /// Vai ler
+        /// </summary>
+        VouLer,
     }
 }

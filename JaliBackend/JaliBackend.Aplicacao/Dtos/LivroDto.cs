@@ -61,6 +61,11 @@ namespace JaliBackend.Aplicacao.Dtos
         /// <summary>
         /// Ainda está lendo o livro
         /// </summary>
-        Lendo
+        Lendo,
+
+        /// <summary>
+        /// Ainda vou ler
+        /// </summary>
+        VouLer
     }
 }
