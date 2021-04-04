@@ -19,4 +19,4 @@ CREATE TABLE [dbo].[Livros]
 
 SELECT * FROM LIVROS
 
-INSERT INTO LIVROS VALUES ('Titulo', 'Resumo', 'jojoe', '04/04/2021 18:55:55', NULL, NULL, NULL, 1, 10, 1);
+INSERT INTO LIVROS VALUES ('Titulo', 'Resumo', 'jojoe', '04/04/2021 18:55:55', NULL, NULL, NULL, 1, 10, 'DALEE');

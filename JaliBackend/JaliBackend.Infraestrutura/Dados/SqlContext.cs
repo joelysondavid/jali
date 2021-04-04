@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace JaliBackend.Infraestrutura.Dados
 {
@@ -31,14 +32,14 @@ namespace JaliBackend.Infraestrutura.Dados
         /// </summary>
         public DbSet<Genero> Generos { get; set; }
 
-        public override int SaveChanges()
+        public async Task<int> SaveChangesAsync()
         {
-            foreach (var entry in ChangeTracker.Entries().Where(entry => entry.Entity.GetType().GetProperty("DataCadastro") != null))
+            foreach (var entry in ChangeTracker.Entries().Where(entry => entry.Entity.GetType().GetProperty("DataCadastro") != null || entry.Entity.GetType().GetProperty("DataModificacao") != null))
             {
                 if (entry.State == EntityState.Added)
                 {
                     // entry.Property("DataModificacao").IsModified = false;
-                    entry.Property("DataModificacao").CurrentValue = DBNull.Value;
+                    entry.Property("DataModificacao").CurrentValue = null;
                     entry.Property("DataCadastro").CurrentValue = DateTime.Now;
                 }
                 if (entry.State == EntityState.Modified)
@@ -48,8 +49,7 @@ namespace JaliBackend.Infraestrutura.Dados
                     entry.Property("DataModificacao").CurrentValue = DateTime.Now;
                 }
             }
-
-            return base.SaveChanges();
+            return await base.SaveChangesAsync();
         }
     }
 }
