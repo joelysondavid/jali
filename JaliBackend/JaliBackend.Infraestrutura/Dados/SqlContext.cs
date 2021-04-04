@@ -38,12 +38,13 @@ namespace JaliBackend.Infraestrutura.Dados
                 if (entry.State == EntityState.Added)
                 {
                     // entry.Property("DataModificacao").IsModified = false;
+                    entry.Property("DataModificacao").CurrentValue = DBNull.Value;
                     entry.Property("DataCadastro").CurrentValue = DateTime.Now;
                 }
                 if (entry.State == EntityState.Modified)
                 {
-                    // entry.Property("DataCadastro").IsModified = false;
-                    // entry.Property("DataModificacao").IsModified = true;
+                    entry.Property("DataCadastro").IsModified = false;
+                    entry.Property("DataModificacao").IsModified = true;
                     entry.Property("DataModificacao").CurrentValue = DateTime.Now;
                 }
             }

@@ -10,10 +10,13 @@ CREATE TABLE [dbo].[Livros]
 	DataModificacao DATETIME NULL,
 	DataInicioLeitura DATETIME NULL,
 	DataConclusaoLeitura DATETIME NULL,
-	Status TINYINT NOT NULL,
-	Avaliacao TINYINT NULL,
-	GeneroId INT,
-	FOREIGN KEY (GeneroId) REFERENCES Generos(Id)
+	Status INT NOT NULL,
+	Avaliacao INT NULL,
+	Genero VARCHAR(30) NOT NULL,
+	-- GeneroId INT,
+	-- FOREIGN KEY (GeneroId) REFERENCES Generos(Id)
 );
 
 SELECT * FROM LIVROS
+
+INSERT INTO LIVROS VALUES ('Titulo', 'Resumo', 'jojoe', '04/04/2021 18:55:55', NULL, NULL, NULL, 1, 10, 1);

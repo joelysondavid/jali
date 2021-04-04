@@ -20,17 +20,18 @@ namespace JaliBackend.Dominio.Entidades
         /// <summary>
         /// Genero do livro
         /// </summary>
-        public Genero Genero { get; set; }
+        public string Genero { get; set; }
+
+        /// <summary>
+        /// Breve resumo para lembraça de pontos relevantes do livro
+        /// </summary>
+        public string Resumo { get; set; }
 
         /// <summary>
         /// Avaliação do livro
         /// </summary>
         public int? Avaliacao { get; set; }
 
-        /// <summary>
-        /// Breve resumo para lembraça de pontos relevantes do livro
-        /// </summary>
-        public string Resumo { get; set; }
 
         /// <summary>
         /// Data que iniciou a leitura do livro
@@ -45,7 +46,7 @@ namespace JaliBackend.Dominio.Entidades
         /// <summary>
         /// Data de cadastro do livro...
         /// </summary>
-        public DateTime DataCadastro { get; set; }
+        public DateTime? DataCadastro { get; set; }
 
         /// <summary>
         /// Data de Atualizacao do cadastro de livro
