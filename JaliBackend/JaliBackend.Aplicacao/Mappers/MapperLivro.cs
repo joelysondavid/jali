@@ -20,10 +20,11 @@ namespace JaliBackend.Aplicacao.Mappers
         {
             Livro entidadeLivro = new Livro
             {
-                Id = livroDto.Id ?? 0,
+                Id = livroDto.Id,
                 Titulo = livroDto.Titulo,
                 Autor = livroDto.Autor,
                 Resumo = livroDto.Resumo,
+                Genero = new MapperGenero().MapperDtoParaEntidade(livroDto.Genero),
                 Avaliacao = livroDto.Avaliacao,
                 DataInicioLeitura = livroDto.DataInicioLeitura,
                 DataConclusaoLeitura = livroDto.DataConclusaoLeitura,
@@ -46,6 +47,7 @@ namespace JaliBackend.Aplicacao.Mappers
                 Titulo = livro.Titulo,
                 Autor = livro.Autor,
                 Resumo = livro.Resumo,
+                Genero = new MapperGenero().MapperEntidadeParaDto(livro.Genero),
                 Avaliacao = livro.Avaliacao,
                 DataInicioLeitura = livro.DataInicioLeitura,
                 DataConclusaoLeitura = livro.DataConclusaoLeitura,

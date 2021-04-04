@@ -28,6 +28,11 @@ namespace JaliBackend.Aplicacao.Dtos
         public string Resumo { get; set; }
 
         /// <summary>
+        /// Genero do livro
+        /// </summary>
+        public GeneroDto Genero { get; set; }
+
+        /// <summary>
         /// Avalição pessoal do livro
         /// </summary>
         public int? Avaliacao { get; set; }
