@@ -20,7 +20,7 @@ namespace JaliBackend.Dominio.Entidades
         /// <summary>
         /// Genero do livro
         /// </summary>
-        public string Genero { get; set; }
+        public Genero Genero { get; set; }
 
         /// <summary>
         /// Breve resumo para lembraça de pontos relevantes do livro

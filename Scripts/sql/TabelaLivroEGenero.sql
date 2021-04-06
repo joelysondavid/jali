@@ -1,4 +1,7 @@
+CREATE DATABASE JaliDDD;
+GO
 USE JaliDDD
+GO
 
 CREATE TABLE [dbo].[Livros]
 (
@@ -20,3 +23,13 @@ CREATE TABLE [dbo].[Livros]
 SELECT * FROM LIVROS
 
 INSERT INTO LIVROS VALUES ('Titulo', 'Resumo', 'jojoe', '04/04/2021 18:55:55', NULL, NULL, NULL, 1, 10, 'DALEE');
+
+
+CREATE TABLE [dbo].[Generos]
+(
+	Id INT IDENTITY(1,1) PRIMARY KEY,
+	TipoGenero VARCHAR(40) NOT NULL,
+	Descricao VARCHAR(255) NULL
+)
+
+SELECT * FROM GENEROS

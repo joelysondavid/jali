@@ -103,7 +103,7 @@ namespace JaliBackend.Infraestrutura.Dados.Repositorios
         /// Obtem todos os objetos do tipo passado
         /// </summary>
         /// <returns>Lista de objetos genericos</returns>
-        public async Task<IEnumerable<T>> ObterTodos()
+        public virtual async Task<IEnumerable<T>> ObterTodos()
         {
             try
             {

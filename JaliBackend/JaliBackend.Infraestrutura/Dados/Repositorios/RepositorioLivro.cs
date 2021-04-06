@@ -1,5 +1,9 @@
 ﻿using JaliBackend.Dominio.Core.Interfaces.Repositorios;
 using JaliBackend.Dominio.Entidades;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace JaliBackend.Infraestrutura.Dados.Repositorios
 {
@@ -20,6 +24,17 @@ namespace JaliBackend.Infraestrutura.Dados.Repositorios
         public RepositorioLivro(SqlContext sqlContext) : base(sqlContext)
         {
             _sqlContext = sqlContext;
+        }
+
+        /// <summary>
+        /// Obter Todos Livros sobrescrito
+        /// </summary>
+        /// <returns></returns>
+        public override async Task<IEnumerable<Livro>> ObterTodos()
+        {
+            IQueryable<Livro> query = _sqlContext.Livros.Include(l => l.Genero);
+
+            return await query.ToArrayAsync();
         }
     }
 }

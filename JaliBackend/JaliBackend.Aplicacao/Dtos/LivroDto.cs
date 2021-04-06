@@ -30,7 +30,7 @@ namespace JaliBackend.Aplicacao.Dtos
         /// <summary>
         /// Genero do livro
         /// </summary>
-        public string Genero { get; set; }
+        public GeneroDto Genero { get; set; }
 
         /// <summary>
         /// Avalição pessoal do livro
