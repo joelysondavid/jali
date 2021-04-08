@@ -5,8 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="4.1 - Dados\" />
-    <Folder Include="4.2 - CrossCutting\" />
+    <PackageReference Include="Autofac" Version="6.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JaliBackend.Aplicacao\JaliBackend.Aplicacao.csproj" />
+    <ProjectReference Include="..\JaliBackend.Domain.Core\JaliBackend.Dominio.Core.csproj" />
+    <ProjectReference Include="..\JaliBackend.Domain.Servicos\JaliBackend.Dominio.Servicos.csproj" />
+    <ProjectReference Include="..\JaliBackend.Dominio\JaliBackend.Dominio.csproj" />
   </ItemGroup>
 
 </Project>

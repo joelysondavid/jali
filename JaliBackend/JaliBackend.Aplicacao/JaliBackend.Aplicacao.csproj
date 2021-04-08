@@ -5,8 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Dtos\" />
-    <Folder Include="Interfaces\" />
+    <ProjectReference Include="..\JaliBackend.Domain.Core\JaliBackend.Dominio.Core.csproj" />
   </ItemGroup>
 
 </Project>
