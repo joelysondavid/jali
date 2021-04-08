@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\JaliBackend.Domain.Core\JaliBackend.Dominio.Core.csproj" />
+  </ItemGroup>
+
 </Project>
